@@ -8,14 +8,8 @@ import datetime
 import time
 root=Tk() 
 scroll_text= StringVar()
-msg1 = "WELCOME TO WALMART SHOPPING CENTER"
 msg2 = "THANK YOU FOR VISITING US..."
-msg3 = "Powered by Python.."
-msg5 = "Welcome to Python programming..."
-msg6 = "Welcome to Python programming..."
-text1 = ""
 text2 = ""
-text3 = ""
 n=0
 class Bill_App:
 #,bg="#03C04A"
@@ -204,22 +198,7 @@ class Bill_App:
 
 
          #============scroll text=============
-        def display():
-            global text1, n, msg1
-            for t in range(len(msg1)):
-                for k in range(t):
-                    text1 += ' '
-                for g in range(len(msg1) - t):
-                    text1 += msg1[g]
-                #text1 = text1.strip()
-                F6.update()
-                F6.after(100)
-                #text1 = text1.strip()
-                scroll_text.set('')
-                scroll_text.set(text1)
-                text1 = ''
-            scroll_text.set('')
-            txtscroll.after(100,display)
+        
         def display():
             global text2, n, msg2
             for t in range(len(msg2)):
